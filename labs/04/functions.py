@@ -8,37 +8,65 @@ def num_input(prompt):
 
 
 def largest(a, b):
-    # Return the larger of two numbers
-    pass
+    if a > b:
+        return a
+    else:
+        return b
 
 def nums(min, max):
-    # Print out the numbers between the minimum number and maximum number 
-    pass
+    for i in range (min, max + 1):
+        print(i)
 
 def is_palindrome(string):
-    # Given a string, return True if the string is a palindrome, False otherwise
-    pass
+    if string == string[::-1]:
+        return True
+    else:
+        return False
 
 def digit_count(string):
-    # Given a string, return how many numbers are in the string 
-    pass 
+    count = 0
+    for i in string:
+        if i.isdigit():
+            count += 1
+    return count
 
 def sum(num):
-    # Given a number, return the sum of the numbers from 1 up to the number. For example, sum(10) should return 55, since 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 = 55.
-    pass
+    total = 0
+    for i in range(1, num + 1):
+        total += i
+    return total
+    
 
 def is_prime(num):
-    # Given a number, return True if the number is a prime number or not.
-    # We've already done this before, we just need to move it into its own function
-    pass
+    if num < 2:
+        return False
+    for i in range(2, num):
+        if num % i == 0:
+            return False
+    return True
 
 def occurrences(string, character):
-    # Given a string and a specific character, count and return how many times that character appears in the string.
-    pass
+    count = 0
+    for i in string:
+        if i == character:
+            count += 1
+    return count
 
 def valid_password(password):
-    # Given a password, return True if the password contains an uppercase, lowercase, and a digit. The password must also be longer than 8 characters long. 
-    pass
+    upper = False
+    lower = False
+    digit = False
+    for i in password:
+        if i.isupper():
+            upper = True
+        if i.islower():
+            lower = True
+        if i.isdigit():
+            digit = True
+            if len(password) > 8 and upper and lower and digit:
+                return True
+            else:
+                return False
 
 
 def main():
