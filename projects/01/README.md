@@ -100,3 +100,15 @@ Exiting the program
 
 ```
 
+## Specification
+
+| Grade   | Task    |
+|--------------- | --------------- |
+| A+   | <ul><li>Everything from A</li><li>If an invalid value is given, a warning message is given.</li><li>Input should not crash the program.</li></ul>   |
+| A   | <ul><li>Everything from B</li><li>Strong Password implemented</li><li>Encryption implemented</li></ul>   |
+| B   |  <ul><li>Reflection answered completely.</li><li>Options entered by the user prints out the message corresponding to what action will be done later.</li><li>Menu continues to repeat until Option to exit is given.</li></ul>  |
+| C  | <ul> <li>Reflection is answered completely.</li> <li> Menu created</li> </ul>|
+| D | An attempt was made. Reflection was approached. |
+| F | No attempt made. |
+
+
