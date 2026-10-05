@@ -1,0 +1,6 @@
+1. Did you find anything challenging about this project?
+
+2. What are some additional features you'd like to do? (List at least 3). These should also be beyond the core functionality of the project itself.
+
+3. Outline how you approached the project.
+
